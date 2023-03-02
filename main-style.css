@@ -77,3 +77,8 @@
     padding: 2px 16px;
 }
 
+.greenBanner {
+    max-width: 100%;
+    height: auto;
+}
+
