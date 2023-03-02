@@ -12,7 +12,20 @@
 
 .textPosition {
     position: absolute;
-    top: 10%;
-    left: 10%;
-    right: 50%;
+    text-align: left;
+    top: 5%;
+    left: 20%;
+    right: 45%;
+    font-size: 1.3vw;
+}
+
+.greenText {
+    color: #549663
+}
+
+.lowerTextPosition {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    text-align: center;
 }
