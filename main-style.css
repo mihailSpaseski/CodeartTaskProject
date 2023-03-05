@@ -1,15 +1,25 @@
 .imageClass {
     display: block;
+    position: relative;
     max-width: 100%;
     height: auto;
 }
 
+.outterBox {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .container {
     position: relative;
+    height: au;
     text-align: center;
 }
 
 .textPosition {
+    display: block;
     position: absolute;
     text-align: left;
     top: 5%;
@@ -19,6 +29,7 @@
 }
 
 .lowerTextPosition {
+    display: block;
     position: absolute;
     text-align: center;
     left: 50%;
@@ -34,8 +45,8 @@
     size: 1.3vw;
 }
 
-
 .column {
+    display: inline;
     float: left;
     width: 45%;
     height: auto;
@@ -62,6 +73,7 @@
 }
 
 .card {
+    display: block;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     text-align: center;
@@ -70,8 +82,9 @@
 }
 
 .clipImage {
+    display: block;
     width: 100%;
-    max-width: fit-content;
+    max-width: 100%;
     height: 12vw;
 }
 
@@ -79,11 +92,8 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container2 {
-    padding: 2px 16px;
-}
-
 .border-fill {
+    display: block;
     border: 1px solid beige;
     padding: 0px;
     margin: 0px;
@@ -94,6 +104,7 @@
 }
 
 .border-fill-green {
+    display: block;
     border: 1px solid #549663;
     padding: 0px;
     margin: 0px;
@@ -105,7 +116,9 @@
 }
 
 .btnStyle {
+    position: relative;
     display: block;
+    transition: 0.3s;
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -117,4 +130,49 @@
     border: none;
 }
 
+.btnStyle:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.guaranteeBanner {
+    position: relative;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.greenBanner {
+    display: block;
+    position: relative;
+    transform: translateX(-25%);
+    width: 200%;
+    max-width: 200%;
+    height: auto;
+    margin: 10px 0px 10px 0px;
+}
+
+.peopleCards {
+    display: block;
+    position: absolute;
+}
+
+.bigBuyNowBtn {
+    transition: 0.3s;
+    width: 50%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: yellow;
+    color: black;
+    font-size: 1.3vw;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+
+.bigBuyNowBtn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
