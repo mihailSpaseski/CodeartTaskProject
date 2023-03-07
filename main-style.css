@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .imageClass {
     display: block;
     position: relative;
@@ -48,7 +53,7 @@
 .column {
     display: inline;
     float: left;
-    width: 45%;
+    width: 47%;
     height: auto;
     padding: 0 10px;
     vertical-align: middle;
@@ -64,7 +69,7 @@
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     .column {
         width: 100%;
         display: block;
@@ -82,10 +87,12 @@
 }
 
 .clipImage {
-    display: block;
+    text-align: center;
     width: 100%;
-    max-width: 100%;
-    height: 12vw;
+    height: 100%;
+    max-width: 15vw;
+    max-height: 15vw;
+    object-fit: fill;
 }
 
 .card:hover {
@@ -95,12 +102,11 @@
 .border-fill {
     display: block;
     border: 1px solid beige;
-    padding: 0px;
     margin: 0px;
     background-color: beige;
     border-radius: 5px 5px 0px 0px;
     font-size: 1.3vw;
-    padding: 10%;
+    padding: 5%;
 }
 
 .border-fill-green {
@@ -111,21 +117,21 @@
     background-color: #549663;
     border-radius: 5px 5px 0px 0px;
     font-size: 1.3vw;
-    padding: 10%;
+    padding: 5%;
     color: white;
 }
 
 .btnStyle {
     position: relative;
-    display: block;
     transition: 0.3s;
-    width: 100%;
+    width: 80%;
     padding: 10px;
     border-radius: 10px;
     background-color: yellow;
     color: black;
     font-size: 1.3vw;
     text-align: center;
+    align-items: center;
     text-decoration: none;
     border: none;
 }
@@ -143,6 +149,16 @@
     width: 100%;
 }
 
+@media screen and (max-width: 400px) {
+    .guaranteeBanner {
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        transform: translateX(0);
+    }
+}
+
 .greenBanner {
     display: block;
     position: relative;
@@ -150,7 +166,7 @@
     width: 200%;
     max-width: 200%;
     height: auto;
-    margin: 10px 0px 10px 0px;
+    margin: 5% 0 5% 0;
 }
 
 .peopleCards {
@@ -176,3 +192,110 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.subPrice {
+    font-size: 0.7vw;
+}
+
+.smallCard {
+    display: inline-block;
+    width: 45%;
+    height: 220px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin: 1%;
+}
+
+@media screen and (max-width: 400px) {
+    .smallCard {
+        width: 100%;
+        display: block;
+        height: fit-content;
+        padding-bottom: 1rem;
+    }
+}
+
+.smallCard-image {
+    max-width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 5% 0;
+}
+
+.smallCard-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.smallCard-text {
+    padding: 2%;
+    text-align: center;
+    font-size: 0.8vw;
+}
+
+.smallCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: 5%;
+}
+
+.greenTxt {
+    text-transform: uppercase;
+    color: #549663;
+}
+
+
+.faq {
+    max-width: 700px;
+    margin-top: 0.1rem;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #549663;
+    background-color: #549663;
+    padding: 0 2% 0 2%;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.question h3 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.answer p {
+    padding: 1rem;
+    line-height: 1.6;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+}
+
+.faq.active .question {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
